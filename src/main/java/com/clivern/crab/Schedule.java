@@ -13,13 +13,23 @@
  */
 package com.clivern.crab;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
 
-@SpringBootApplication
-public class CrabApplication {
+@Component
+public class Schedule {
 
-    public static void main(String[] args) {
-        SpringApplication.run(CrabApplication.class, args);
+    private static final Logger log = LoggerFactory.getLogger(Scheduled.class);
+
+    private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
+
+    @Scheduled(fixedRate = 800)
+    public void backgroudProcess() {
+        log.info("Start backgroud process {}", dateFormat.format(new Date()));
+        // Kafka consumer or a cron
     }
 }
