@@ -1,7 +1,7 @@
 <p align="center">
     <img alt="crap Logo" src="/images/logo.png" height="150" />
     <h3 align="center">Crap</h3>
-    <p align="center">Java Application Boilerplate.</p>
+    <p align="center">Java Spring Boot Applications Boilerplate.</p>
     <p align="center">
         <a href="https://github.com/Clivern/Crab/actions/workflows/ci.yml">
             <img src="https://github.com/Clivern/Crab/actions/workflows/ci.yml/badge.svg?branch=main">
