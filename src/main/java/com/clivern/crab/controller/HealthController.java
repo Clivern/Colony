@@ -33,6 +33,6 @@ public class HealthController {
 
     @GetMapping("/")
     public Status health() {
-        return new Status("ok");
+        return new Status("UP");
     }
 }
