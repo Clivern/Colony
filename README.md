@@ -3,8 +3,8 @@
     <h3 align="center">Crap</h3>
     <p align="center">Java Application Boilerplate.</p>
     <p align="center">
-        <a href="https://github.com/Clivern/crap/actions/workflows/ci.yml">
-            <img src="https://github.com/Clivern/crap/actions/workflows/ci.yml/badge.svg">
+        <a href="https://github.com/Clivern/Crab/actions/workflows/ci.yml">
+            <img src="https://github.com/Clivern/Crab/actions/workflows/ci.yml/badge.svg?branch=main">
         </a>
         <a href="https://github.com/Clivern/crap/blob/main/LICENSE">
             <img src="https://img.shields.io/badge/LICENSE-Apache_2.0-orange.svg">
