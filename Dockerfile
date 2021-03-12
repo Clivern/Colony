@@ -16,9 +16,9 @@ VOLUME /app/storage
 
 ENV DB_DATABASE=/app/storage/db
 
-COPY --from=builder /home/gradle/src/build/libs/crab-0.0.1.jar /app/releases/crab-0.0.1.jar
+COPY --from=builder /home/gradle/src/build/libs/colony-0.0.1.jar /app/releases/colony-0.0.1.jar
 COPY --from=builder /home/gradle/src/config.properties /app/configs/config.properties
 
 EXPOSE 8000
 
-ENTRYPOINT ["java", "-jar", "/app/releases/crab-0.0.1.jar", "--spring.config.name=config"]
+ENTRYPOINT ["java", "-jar", "/app/releases/colony-0.0.1.jar", "--spring.config.name=config"]

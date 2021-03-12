@@ -96,7 +96,7 @@ run:
 
 ## runJar: Run jar file
 runJar: build
-	java -jar build/libs/crab-0.0.1.jar --spring.config.name=config
+	java -jar build/libs/colony-0.0.1.jar --spring.config.name=config
 
 
 ## coverage: Gradle test coverage task

@@ -11,14 +11,19 @@
  * or implied. See the License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.clivern.crab;
+package com.clivern.colony;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
-@SpringBootTest
-class CrabApplicationTests {
+@SpringBootApplication
+@EnableAsync
+@EnableScheduling
+public class Application {
 
-    @Test
-    void contextLoads() {}
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
 }
