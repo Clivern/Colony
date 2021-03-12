@@ -30,6 +30,14 @@ public class Schedule {
     @Scheduled(fixedRate = 800)
     public void backgroudProcess() {
         log.info("Start backgroud process {}", dateFormat.format(new Date()));
-        // Kafka consumer or a cron
+
+        // Kafka consumer (Long running process)
+        try {
+            Thread.sleep(20000);
+        } catch (Exception e) {
+
+        }
+
+        log.info("Backgroud process finished");
     }
 }
