@@ -1,6 +1,6 @@
 <p align="center">
     <img alt="crap Logo" src="/images/logo.png" height="150" />
-    <h3 align="center">Crap</h3>
+    <h3 align="center">Colony</h3>
     <p align="center">Java Spring Boot Applications Boilerplate.</p>
     <p align="center">
         <a href="https://github.com/Clivern/Colony/actions/workflows/ci.yml">
